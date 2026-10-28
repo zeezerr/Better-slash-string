@@ -1,0 +1,37 @@
+# Better /String configuration
+# Changes are applied when the server starts.
+
+# Prefix shown before every message (supports & colour codes).
+prefix: "&8[&bBetter &f/String&8] "
+
+# If true, /string enable and /string disable are remembered across restarts (stored in state.yml).
+# If false, the feature always starts DISABLED after a restart.
+remember-enabled-state: true
+
+# Cooldown between successful uses, in seconds (0 = no cooldown).
+cooldown-seconds: 30
+
+# Amount of string in every stack (1 - 64). Invalid values fall back to 64.
+stack-size: 64
+
+# Keep cooldowns across server restarts (stored in cooldowns.yml).
+cooldowns-persist: true
+
+# If true, players with betterstring.admin also skip the cooldown.
+# (betterstring.cooldown.bypass always works regardless of this setting.)
+admins-bypass-cooldown: false
+
+messages:
+  usage: "&cUsage: /string [enable|disable|status]"
+  feature-disabled: "&cThe /string feature is currently disabled."
+  enabled: "&aBetter /String has been enabled."
+  admin-disabled: "&cBetter /String has been disabled."
+  already-enabled: "&eBetter /String is already enabled."
+  already-disabled: "&eBetter /String is already disabled."
+  success: "&aYour inventory has been filled with string!"
+  cooldown: "&cYou must wait %seconds%s before using /string again."
+  no-empty-slots: "&eYou have no empty inventory slots!"
+  no-permission: "&cYou do not have permission to use this command."
+  player-only: "&cThis subcommand can only be used by a player."
+  status-enabled: "&aBetter /String is currently ENABLED."
+  status-disabled: "&cBetter /String is currently DISABLED."

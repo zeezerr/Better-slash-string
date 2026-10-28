@@ -1,0 +1,22 @@
+name: BetterString
+version: '${project.version}'
+main: com.betterstring.BetterStringPlugin
+api-version: '1.21'
+description: Instantly fill your empty inventory slots with string.
+authors: [BetterString]
+
+commands:
+  string:
+    description: Fill every empty inventory slot with string.
+    usage: /string [enable|disable|status]
+
+permissions:
+  betterstring.use:
+    description: Allows using /string while the feature is enabled.
+    default: true
+  betterstring.admin:
+    description: Allows /string enable, /string disable and /string status.
+    default: op
+  betterstring.cooldown.bypass:
+    description: Bypass the /string cooldown.
+    default: false
